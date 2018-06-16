@@ -8,6 +8,9 @@ WORKDIR /usr/src/app
 COPY . /usr/src/app
 
 # Install app dependencies
+RUN npm install -g bower bower-art-resolver
+RUN echo '{ "allow_root": true }' > /root/.bowerrc
+RUN bower install
 RUN npm install
 
 EXPOSE 3000

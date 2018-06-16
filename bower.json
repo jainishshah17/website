@@ -1,0 +1,29 @@
+{
+  "name": "jainishshah",
+  "description": "Portfolio website",
+  "main": "",
+  "authors": [
+    "jainish shah <jainishshah@yahoo.com>"
+  ],
+  "license": "NONE",
+  "homepage": "https://github.com/jainishshah17/website.git",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#^1.6.9",
+    "ajax": "^2.3.0",
+    "d3": "^5.0.0",
+    "jquery": "^3.3.1",
+    "requirejs": "^2.3.5",
+    "videojs": "^6.8.0",
+    "bootstrap": "^4.1.1",
+    "popper.js": "^1.14.3",
+    "loader.js": "^4.7.0"
+  },
+  "private": true
+}
