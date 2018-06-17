@@ -1,6 +1,7 @@
 # Create, build, package and deploy portfolio website using Express.js, Node.js and Docker (Continuous Integration using CircleCI)
 
 [![CircleCI](https://circleci.com/gh/jainishshah17/website.svg?style=svg)](https://circleci.com/gh/jainishshah17/website)
+
 [Docker Image](https://hub.docker.com/r/jainishshah17/website/tags/)
 
 ## Prerequisites Details
@@ -30,6 +31,7 @@ npm install
 npm start
 ```
 * Check website in Browser using URL [http://localhost:3000](http://localhost:3000)
+
 ![ScreenShot](/images/Screen_Shot_1.png)
 
 
