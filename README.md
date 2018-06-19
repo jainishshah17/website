@@ -43,7 +43,7 @@ docker build -t jainishshah17/website:latest .
 ```
 * Run docker image to test it locally
 ```
-docker run -d -p 3000:3000 jainishshah17/website:latest
+docker run -d -p 80:80 -p 443:443 -p 3000:3000 jainishshah17/website:latest
 ```
 * Check website in Browser using URL [http://localhost:3000](http://localhost:3000)
 
@@ -52,4 +52,3 @@ docker run -d -p 3000:3000 jainishshah17/website:latest
 ## Please login to Docker Registry priour to pushing docker image using `docker login` command
 docker push jainishshah17/website:latest
 ```
-

@@ -13,6 +13,12 @@ RUN echo '{ "allow_root": true }' > /root/.bowerrc
 RUN bower install
 RUN npm install
 
-EXPOSE 3000
+# Install Nginx
+RUN apt-get update && apt-get install -y nginx nano
+COPY config/website.conf /etc/nginx/conf.d
+COPY config/ssl /etc/nginx/ssl
+RUN rm -rf /etc/nginx/sites-available/* && rm -rf /etc/nginx/sites-enabled/*
 
-CMD [ "npm", "start" ]
+EXPOSE 80 443 3000
+
+CMD [ "./entrypoint.sh" ]
