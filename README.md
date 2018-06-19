@@ -52,3 +52,25 @@ docker run -d -p 80:80 -p 443:443 -p 3000:3000 jainishshah17/website:latest
 ## Please login to Docker Registry priour to pushing docker image using `docker login` command
 docker push jainishshah17/website:latest
 ```
+
+### Deploy docker image in production
+
+There are multiple ways to deploy docker containers.
+You can choose any cloud provider from [Azure](https://azure.microsoft.com/en-us/), [GCP](https://cloud.google.com/) and [AWS](https://aws.amazon.com/).
+
+Following are some ways which you can use:
+* To deploy docker containers to AWS. [https://aws.amazon.com/getting-started/tutorials/deploy-docker-containers/]
+* To deploy containerized web application on GCP. [https://cloud.google.com/kubernetes-engine/docs/tutorials/hello-app]
+* Deploy a container to Azure Container Instances. [https://docs.microsoft.com/en-us/azure/container-instances/container-instances-tutorial-deploy-app]
+
+Once you have your container deployed and you have External IP to access now its time to Buy a domain (e.g jainishshah.com) and link it with Extrenal IP of your deployed website container.
+There are multiple website who sells domain names following are couple of them:
+* https://www.godaddy.com/
+* https://domains.google/
+* https://www.squarespace.com/
+
+I personlly prefer combination of AWS and GoDaddy.
+Here is the [link](https://www.godaddy.com/help/update-my-domains-ip-address-for-forwarding-5289) learn how to point your domain to Extrenal IP your deployed website container.
+
+
+Check out http://jainishshah.com/ to see example website in action.
