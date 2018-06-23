@@ -8,6 +8,7 @@ var indexRouter = require('./routes/index');
 var portfolioRouter = require('./routes/portfolio');
 var contactRouter = require('./routes/contact');
 var aboutRouter = require('./routes/about');
+var blogsRouter = require('./routes/blogs');
 
 var app = express();
 
@@ -25,6 +26,7 @@ app.use('/bower_components',  express.static(__dirname + '/bower_components'));
 app.use('/', indexRouter);
 app.use('/portfolio', portfolioRouter);
 app.use('/contact', contactRouter);
+app.use('/blogs', blogsRouter);
 app.use('/about', aboutRouter);
 
 // catch 404 and forward to error handler
