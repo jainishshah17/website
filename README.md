@@ -19,11 +19,14 @@
 ```
 git clone https://github.com/jainishshah17/website.git
 ```
-* Install dependencies:
+* Install dependencies to build node server for website:
 ```
 cd website/
+## Install bower and bower-art-resolver to install your bower dependencies
 npm install -g bower bower-art-resolver
+## Install bower dependency packages
 bower install
+## Install npm dependency packages
 npm install
 ```
 * Start node server to view website:
@@ -32,8 +35,13 @@ npm start
 ```
 * Check website in Browser using URL [http://localhost:3000](http://localhost:3000)
 
+It will look like following ScreenShot:
 ![ScreenShot](/images/Screen_Shot_1.png)
 
+* Now its time for you to make changes in code to customise it and make it your portfolio website.
+Change contents of `.hbs` files in [views](/views) directory.
+Once you are ready just restart you node server and refresh website page [http://localhost:3000](http://localhost:3000) in your browser.
+Great!!! Now your website is developed locally. Let's follow the next step which is packaging it in Docker image.
 
 ### Command to build and run docker image locally:
 
@@ -52,6 +60,8 @@ docker run -d -p 80:80 -p 443:443 -p 3000:3000 jainishshah17/website:latest
 ## Please login to Docker Registry priour to pushing docker image using `docker login` command
 docker push jainishshah17/website:latest
 ```
+
+* Once your docker image if pushed to docker registry. You are ready to Deploy it in prodution.
 
 ### Deploy docker image in production
 
