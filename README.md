@@ -39,8 +39,11 @@ It will look like following ScreenShot:
 ![ScreenShot](/images/Screen_Shot_1.png)
 
 * Now its time for you to make changes in code to customise it and make it your portfolio website.
+
 Change contents of `.hbs` files in [views](/views) directory.
+
 Once you are ready just restart you node server and refresh website page [http://localhost:3000](http://localhost:3000) in your browser.
+
 Great!!! Now your website is developed locally. Let's follow the next step which is packaging it in Docker image.
 
 ### Command to build and run docker image locally:
