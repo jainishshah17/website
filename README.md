@@ -40,9 +40,9 @@ It will look like following ScreenShot:
 
 * Now its time for you to make changes in code to customise it and make it your portfolio website.
 
-Change contents of `.hbs` files in [views](/views) directory.
+* Change contents of `.hbs` files in [views](/views) directory.
 
-Once you are ready just restart you node server and refresh website page [http://localhost:3000](http://localhost:3000) in your browser.
+* Once you are ready just restart you node server and refresh website page [http://localhost:3000](http://localhost:3000) in your browser.
 
 Great!!! Now your website is developed locally. Let's follow the next step which is packaging it in Docker image.
 
@@ -76,14 +76,14 @@ Following are some ways which you can use:
 * To deploy containerized web application on GCP. [https://cloud.google.com/kubernetes-engine/docs/tutorials/hello-app]
 * Deploy a container to Azure Container Instances. [https://docs.microsoft.com/en-us/azure/container-instances/container-instances-tutorial-deploy-app]
 
-Once you have your container deployed and you have External IP to access now its time to Buy a domain (e.g jainishshah.com) and link it with Extrenal IP of your deployed website container.
+Once you have your container deployed and you have External IP to access now its time to Buy a domain (e.g jainishshah.com) and link it with External IP of your deployed website container.
 There are multiple website who sells domain names following are couple of them:
 * https://www.godaddy.com/
 * https://domains.google/
 * https://www.squarespace.com/
 
-I personlly prefer combination of AWS and GoDaddy.
-Here is the [link](https://www.godaddy.com/help/update-my-domains-ip-address-for-forwarding-5289) learn how to point your domain to Extrenal IP your deployed website container.
+I personally prefer the combination of AWS and GoDaddy.
+Here is the [link](https://www.godaddy.com/help/update-my-domains-ip-address-for-forwarding-5289) learn how to point your domain to External IP your deployed website container.
 
 
-Check out http://jainishshah.com/ to see example website in action.
+Check out http://jainishshah.com/ to see the example website in action.
