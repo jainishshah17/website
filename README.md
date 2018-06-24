@@ -60,7 +60,7 @@ docker run -d -p 80:80 -p 443:443 -p 3000:3000 jainishshah17/website:latest
 
 * Push docker image to Docker Registry:
 ```
-## Please login to Docker Registry priour to pushing docker image using `docker login` command
+## Please login to Docker Registry prior to pushing docker image using `docker login` command
 docker push jainishshah17/website:latest
 ```
 
